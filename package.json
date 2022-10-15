@@ -1,0 +1,11 @@
+{
+  "name": "projeto_ra5",
+  "version": "1.0.0",
+  "description": "TCC - RA5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme Soares da Silva",
+  "license": "ISC"
+}
