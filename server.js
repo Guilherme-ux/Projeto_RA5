@@ -3,13 +3,11 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const path = require('path');
 const mongoose = require('mongoose');
+const app = express ();
 const port = process.env.PORT || 5000;
 
-mongoose.connect('mongodb://localhost:27017/Projeto_RA5',{
-    useUnifiedTopology:true,
-    useNewUrlParser:true,
-    UsefindAndModify:false
-},function(err){
+mongoose.connect('mongodb://localhost:27017/RA5'
+,function(err){
    if(err){
         console.log(err)
    }else{
@@ -17,7 +15,7 @@ mongoose.connect('mongodb://localhost:27017/Projeto_RA5',{
    } 
 });
 
-const app = express ();
+
 app.use(cors());
 
 app.use(cookieParser());
